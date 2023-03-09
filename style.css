@@ -1,0 +1,172 @@
+/* ------------- <=( Fonts )=> ----------------- */
+@import url("https://fonts.googleapis.com/css2?family=Commissioner:wght@400;500;700&display=swap");
+/* ------------- <=( colors )=> ------------ */
+:root {
+  --cyan: hsl(176, 50%, 47%);
+  --Darkcyan: hsl(176, 72%, 28%);
+  --Black: hsl(0, 0%, 0%);
+  --Darkgray: hsl(0, 0%, 48%);
+  --Offwhite: rgb(250 250 250);
+  --Commissioner: "Commissioner", sans-serif;
+  --Width: 0%;
+}
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  outline: 0;
+}
+body {
+  font-size: 16px;
+  font-family: "Commissioner" sans-serif;
+  background-color: var(--Offwhite);
+}
+/* ------------- <=( Globals )=> ------------ */
+
+/* ------------- <=( Butttons )=> ------------ */
+button {
+  background-color: var(--cyan);
+  border: none;
+  border-radius: 50px;
+  width: 120px;
+  height: 40px;
+  color: white;
+  padding: 3px;
+  cursor: pointer;
+}
+
+/* ------------- <=( Header/Hero )=> ------------ */
+.container {
+  display: flex;
+  flex-direction: column;
+}
+.nav {
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  z-index: 2;
+  margin-top: 40px;
+}
+.logo img {
+  margin-left: 120px;
+  width: 9rem;
+}
+.links {
+  margin-right: 0px;
+  display: flex;
+  flex-direction: row;
+  margin-right: 140px;
+  justify-content: center;
+  align-items: center;
+}
+.links a {
+  color: white;
+  text-decoration: none;
+  padding: 10px;
+}
+
+.hero img {
+  background: url("./images/image-hero-desktop.jpg");
+  height: 400px;
+  width: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: absolute;
+  overflow-x: hidden;
+}
+
+/* ------------- <=( content-section )=> ------------ */
+.content {
+  margin-top: 200px;
+
+  width: 50%;
+  margin-left: 350px;
+  margin-right: 350px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  z-index: 3;
+  position: absolute;
+}
+.card1 {
+  border-radius: 10px;
+  margin-bottom: 25px;
+  padding: 20px;
+  margin-left: 150px;
+  margin-right: 150px;
+  background-color: white;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  transition: 0.3s;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+.card1 img {
+  width: 40px;
+  height: 40px;
+  left: 10;
+  top: 20;
+  position: relative;
+}
+.card1 h1 {
+  font-size: 20px;
+  text-align: center;
+  padding-bottom: 12px;
+}
+.card1 p {
+  font-size: 12px;
+  text-align: center;
+}
+.card2 {
+  border-radius: 10px;
+  padding: 20px;
+  width: 100%;
+  margin-bottom: 25px;
+  background-color: white;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  transition: 0.3s;
+}
+.card3 {
+  width: 100%;
+  margin-bottom: 5px;
+  background-color: white;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  transition: 0.3s;
+  margin-bottom: 100px;
+  border-radius: 10px;
+}
+
+/* ------------- <=( About )=> ------------ */
+.about-info {
+  padding: 20px;
+}
+.about-info p {
+  margin-bottom: 10px;
+}
+.acards-wrap {
+  padding: 30px;
+  background-color: white;
+}
+.acard1 {
+  margin-bottom: 25px;
+  border-radius: 10px;
+  padding: 20px;
+  border: 1px solid lightgrey;
+}
+.acard2 {
+  margin-bottom: 25px;
+  border-radius: 10px;
+  padding: 20px;
+  border: 1px solid lightgrey;
+}
+.acard3 {
+  margin-bottom: 25px;
+  border-radius: 10px;
+  padding: 20px;
+  border: 1px solid lightgrey;
+}
+
+/* ------------- <=( Mobile/Tab )=> ------------ */
